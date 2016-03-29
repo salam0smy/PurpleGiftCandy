@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FECAFCA21CAA408D00656E63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCA11CAA408D00656E63 /* AppDelegate.swift */; };
+		FECAFCA41CAA408D00656E63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCA31CAA408D00656E63 /* ViewController.swift */; };
+		FECAFCA71CAA408D00656E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCA51CAA408D00656E63 /* Main.storyboard */; };
+		FECAFCA91CAA408D00656E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCA81CAA408D00656E63 /* Assets.xcassets */; };
+		FECAFCAC1CAA408D00656E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCAA1CAA408D00656E63 /* LaunchScreen.storyboard */; };
+		FECAFCB71CAA408F00656E63 /* PurpleGiftCandyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCB61CAA408F00656E63 /* PurpleGiftCandyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FECAFCB31CAA408F00656E63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FECAFC961CAA408C00656E63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FECAFC9D1CAA408C00656E63;
+			remoteInfo = PurpleGiftCandy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FECAFC9E1CAA408D00656E63 /* PurpleGiftCandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleGiftCandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECAFCA11CAA408D00656E63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FECAFCA31CAA408D00656E63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FECAFCA61CAA408D00656E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FECAFCA81CAA408D00656E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FECAFCAB1CAA408D00656E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FECAFCAD1CAA408D00656E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECAFCB21CAA408F00656E63 /* PurpleGiftCandyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleGiftCandyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECAFCB61CAA408F00656E63 /* PurpleGiftCandyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleGiftCandyTests.swift; sourceTree = "<group>"; };
+		FECAFCB81CAA408F00656E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FECAFC9B1CAA408C00656E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECAFCAF1CAA408F00656E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FECAFC951CAA408C00656E63 = {
+			isa = PBXGroup;
+			children = (
+				FECAFCA01CAA408D00656E63 /* PurpleGiftCandy */,
+				FECAFCB51CAA408F00656E63 /* PurpleGiftCandyTests */,
+				FECAFC9F1CAA408D00656E63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FECAFC9F1CAA408D00656E63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FECAFC9E1CAA408D00656E63 /* PurpleGiftCandy.app */,
+				FECAFCB21CAA408F00656E63 /* PurpleGiftCandyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FECAFCA01CAA408D00656E63 /* PurpleGiftCandy */ = {
+			isa = PBXGroup;
+			children = (
+				FECAFCA11CAA408D00656E63 /* AppDelegate.swift */,
+				FECAFCA31CAA408D00656E63 /* ViewController.swift */,
+				FECAFCA51CAA408D00656E63 /* Main.storyboard */,
+				FECAFCA81CAA408D00656E63 /* Assets.xcassets */,
+				FECAFCAA1CAA408D00656E63 /* LaunchScreen.storyboard */,
+				FECAFCAD1CAA408D00656E63 /* Info.plist */,
+			);
+			path = PurpleGiftCandy;
+			sourceTree = "<group>";
+		};
+		FECAFCB51CAA408F00656E63 /* PurpleGiftCandyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FECAFCB61CAA408F00656E63 /* PurpleGiftCandyTests.swift */,
+				FECAFCB81CAA408F00656E63 /* Info.plist */,
+			);
+			path = PurpleGiftCandyTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FECAFC9D1CAA408C00656E63 /* PurpleGiftCandy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECAFCBB1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandy" */;
+			buildPhases = (
+				FECAFC9A1CAA408C00656E63 /* Sources */,
+				FECAFC9B1CAA408C00656E63 /* Frameworks */,
+				FECAFC9C1CAA408C00656E63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PurpleGiftCandy;
+			productName = PurpleGiftCandy;
+			productReference = FECAFC9E1CAA408D00656E63 /* PurpleGiftCandy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FECAFCB11CAA408F00656E63 /* PurpleGiftCandyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECAFCBE1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandyTests" */;
+			buildPhases = (
+				FECAFCAE1CAA408F00656E63 /* Sources */,
+				FECAFCAF1CAA408F00656E63 /* Frameworks */,
+				FECAFCB01CAA408F00656E63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECAFCB41CAA408F00656E63 /* PBXTargetDependency */,
+			);
+			name = PurpleGiftCandyTests;
+			productName = PurpleGiftCandyTests;
+			productReference = FECAFCB21CAA408F00656E63 /* PurpleGiftCandyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FECAFC961CAA408C00656E63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Salam alyahya";
+				TargetAttributes = {
+					FECAFC9D1CAA408C00656E63 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FECAFCB11CAA408F00656E63 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FECAFC9D1CAA408C00656E63;
+					};
+				};
+			};
+			buildConfigurationList = FECAFC991CAA408C00656E63 /* Build configuration list for PBXProject "PurpleGiftCandy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FECAFC951CAA408C00656E63;
+			productRefGroup = FECAFC9F1CAA408D00656E63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FECAFC9D1CAA408C00656E63 /* PurpleGiftCandy */,
+				FECAFCB11CAA408F00656E63 /* PurpleGiftCandyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FECAFC9C1CAA408C00656E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECAFCAC1CAA408D00656E63 /* LaunchScreen.storyboard in Resources */,
+				FECAFCA91CAA408D00656E63 /* Assets.xcassets in Resources */,
+				FECAFCA71CAA408D00656E63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECAFCB01CAA408F00656E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FECAFC9A1CAA408C00656E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECAFCA41CAA408D00656E63 /* ViewController.swift in Sources */,
+				FECAFCA21CAA408D00656E63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECAFCAE1CAA408F00656E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECAFCB71CAA408F00656E63 /* PurpleGiftCandyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FECAFCB41CAA408F00656E63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FECAFC9D1CAA408C00656E63 /* PurpleGiftCandy */;
+			targetProxy = FECAFCB31CAA408F00656E63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FECAFCA51CAA408D00656E63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECAFCA61CAA408D00656E63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FECAFCAA1CAA408D00656E63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECAFCAB1CAA408D00656E63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FECAFCB91CAA408F00656E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FECAFCBA1CAA408F00656E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FECAFCBC1CAA408F00656E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PurpleGiftCandy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FECAFCBD1CAA408F00656E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PurpleGiftCandy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FECAFCBF1CAA408F00656E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PurpleGiftCandyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PurpleGiftCandy.app/PurpleGiftCandy";
+			};
+			name = Debug;
+		};
+		FECAFCC01CAA408F00656E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PurpleGiftCandyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PurpleGiftCandy.app/PurpleGiftCandy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FECAFC991CAA408C00656E63 /* Build configuration list for PBXProject "PurpleGiftCandy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECAFCB91CAA408F00656E63 /* Debug */,
+				FECAFCBA1CAA408F00656E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECAFCBB1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECAFCBC1CAA408F00656E63 /* Debug */,
+				FECAFCBD1CAA408F00656E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FECAFCBE1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECAFCBF1CAA408F00656E63 /* Debug */,
+				FECAFCC01CAA408F00656E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FECAFC961CAA408C00656E63 /* Project object */;
+}
