@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E31D6073293639C976EBF6F /* Pods_PurpleGiftCandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E96ACA3FB8542710CC630E5 /* Pods_PurpleGiftCandy.framework */; };
+		FEA6028C1CAAEDFD00904CCF /* OccasionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */; };
+		FEA6028E1CAAF03F00904CCF /* OccasionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */; };
+		FEA602901CAAF06E00904CCF /* Occasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028F1CAAF06E00904CCF /* Occasion.swift */; };
+		FEA602921CAB012200904CCF /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602911CAB012200904CCF /* Gift.swift */; };
+		FEA602931CAB012200904CCF /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602911CAB012200904CCF /* Gift.swift */; };
+		FEA602951CAB06B600904CCF /* GiftFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602941CAB06B600904CCF /* GiftFeedTableViewCell.swift */; };
+		FEA602971CAB077C00904CCF /* FeedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602961CAB077C00904CCF /* FeedsTableViewController.swift */; };
+		FEA602991CAB2D6200904CCF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602981CAB2D6200904CCF /* User.swift */; };
+		FEA6029A1CAB2D6200904CCF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602981CAB2D6200904CCF /* User.swift */; };
+		FEA6029D1CAB355800904CCF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6029C1CAB355800904CCF /* Utils.swift */; };
+		FEA6029F1CAB385B00904CCF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6029E1CAB385B00904CCF /* ProfileViewController.swift */; };
+		FEA602A11CAB5CC500904CCF /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A01CAB5CC500904CCF /* FriendsTableViewCell.swift */; };
+		FEA602A31CAB5D9000904CCF /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A21CAB5D9000904CCF /* FriendsTableViewController.swift */; };
+		FEA602A51CAB782F00904CCF /* OccasionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A41CAB782F00904CCF /* OccasionViewController.swift */; };
+		FEA602A81CACE35A00904CCF /* NewGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A71CACE35A00904CCF /* NewGiftViewController.swift */; };
+		FEA602AA1CACF37E00904CCF /* SelectListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A91CACF37E00904CCF /* SelectListTableViewController.swift */; };
 		FECAFCA21CAA408D00656E63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCA11CAA408D00656E63 /* AppDelegate.swift */; };
 		FECAFCA41CAA408D00656E63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCA31CAA408D00656E63 /* ViewController.swift */; };
 		FECAFCA71CAA408D00656E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCA51CAA408D00656E63 /* Main.storyboard */; };
@@ -26,6 +43,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C343BD611A412784CF9961 /* Pods-PurpleGiftCandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleGiftCandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurpleGiftCandy/Pods-PurpleGiftCandy.release.xcconfig"; sourceTree = "<group>"; };
+		1E96ACA3FB8542710CC630E5 /* Pods_PurpleGiftCandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurpleGiftCandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F72AB30D6F2EBDB6F5737D /* Pods-PurpleGiftCandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleGiftCandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurpleGiftCandy/Pods-PurpleGiftCandy.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionTableViewCell.swift; sourceTree = "<group>"; };
+		FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionsTableViewController.swift; sourceTree = "<group>"; };
+		FEA6028F1CAAF06E00904CCF /* Occasion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occasion.swift; sourceTree = "<group>"; };
+		FEA602911CAB012200904CCF /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		FEA602941CAB06B600904CCF /* GiftFeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftFeedTableViewCell.swift; sourceTree = "<group>"; };
+		FEA602961CAB077C00904CCF /* FeedsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsTableViewController.swift; sourceTree = "<group>"; };
+		FEA602981CAB2D6200904CCF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEA6029C1CAB355800904CCF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FEA6029E1CAB385B00904CCF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FEA602A01CAB5CC500904CCF /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		FEA602A21CAB5D9000904CCF /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		FEA602A41CAB782F00904CCF /* OccasionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionViewController.swift; sourceTree = "<group>"; };
+		FEA602A61CAC8DD600904CCF /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		FEA602A71CACE35A00904CCF /* NewGiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGiftViewController.swift; sourceTree = "<group>"; };
+		FEA602A91CACF37E00904CCF /* SelectListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectListTableViewController.swift; sourceTree = "<group>"; };
 		FECAFC9E1CAA408D00656E63 /* PurpleGiftCandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleGiftCandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECAFCA11CAA408D00656E63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FECAFCA31CAA408D00656E63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E31D6073293639C976EBF6F /* Pods_PurpleGiftCandy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +92,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A76A62D62A2FDBB80EDA56DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E96ACA3FB8542710CC630E5 /* Pods_PurpleGiftCandy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1FCD8D421848DDF83BAC10A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9F72AB30D6F2EBDB6F5737D /* Pods-PurpleGiftCandy.debug.xcconfig */,
+				00C343BD611A412784CF9961 /* Pods-PurpleGiftCandy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEA602871CAAED7600904CCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6028F1CAAF06E00904CCF /* Occasion.swift */,
+				FEA602911CAB012200904CCF /* Gift.swift */,
+				FEA602981CAB2D6200904CCF /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FEA602881CAAEDB200904CCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */,
+				FEA602941CAB06B600904CCF /* GiftFeedTableViewCell.swift */,
+				FEA602A01CAB5CC500904CCF /* FriendsTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FEA602891CAAEDBE00904CCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */,
+				FEA602961CAB077C00904CCF /* FeedsTableViewController.swift */,
+				FEA6029E1CAB385B00904CCF /* ProfileViewController.swift */,
+				FEA602A21CAB5D9000904CCF /* FriendsTableViewController.swift */,
+				FEA602A41CAB782F00904CCF /* OccasionViewController.swift */,
+				FEA602A71CACE35A00904CCF /* NewGiftViewController.swift */,
+				FEA602A91CACF37E00904CCF /* SelectListTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FEA6028A1CAAEDC400904CCF /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		FEA6029B1CAB353A00904CCF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		FECAFC951CAA408C00656E63 = {
 			isa = PBXGroup;
 			children = (
 				FECAFCA01CAA408D00656E63 /* PurpleGiftCandy */,
 				FECAFCB51CAA408F00656E63 /* PurpleGiftCandyTests */,
 				FECAFC9F1CAA408D00656E63 /* Products */,
+				F1FCD8D421848DDF83BAC10A /* Pods */,
+				A76A62D62A2FDBB80EDA56DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +180,19 @@
 		FECAFCA01CAA408D00656E63 /* PurpleGiftCandy */ = {
 			isa = PBXGroup;
 			children = (
+				FEA6029B1CAB353A00904CCF /* New Group */,
+				FEA6028A1CAAEDC400904CCF /* Store */,
+				FEA602891CAAEDBE00904CCF /* Controller */,
+				FEA602881CAAEDB200904CCF /* View */,
+				FEA602871CAAED7600904CCF /* Model */,
 				FECAFCA11CAA408D00656E63 /* AppDelegate.swift */,
 				FECAFCA31CAA408D00656E63 /* ViewController.swift */,
 				FECAFCA51CAA408D00656E63 /* Main.storyboard */,
 				FECAFCA81CAA408D00656E63 /* Assets.xcassets */,
 				FECAFCAA1CAA408D00656E63 /* LaunchScreen.storyboard */,
 				FECAFCAD1CAA408D00656E63 /* Info.plist */,
+				FEA6029C1CAB355800904CCF /* Utils.swift */,
+				FEA602A61CAC8DD600904CCF /* Bridging.h */,
 			);
 			path = PurpleGiftCandy;
 			sourceTree = "<group>";
@@ -103,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FECAFCBB1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandy" */;
 			buildPhases = (
+				F47E06D53168161C30AFEC63 /* 📦 Check Pods Manifest.lock */,
 				FECAFC9A1CAA408C00656E63 /* Sources */,
 				FECAFC9B1CAA408C00656E63 /* Frameworks */,
 				FECAFC9C1CAA408C00656E63 /* Resources */,
+				92B52FF38D910116D668E4C4 /* 📦 Embed Pods Frameworks */,
+				5A095A36A4F764F2206A4A0E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FECAFCBE1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandyTests" */;
 			buildPhases = (
+				77A3C3434B2A5F615C7BE0B9 /* 📦 Check Pods Manifest.lock */,
 				FECAFCAE1CAA408F00656E63 /* Sources */,
 				FECAFCAF1CAA408F00656E63 /* Frameworks */,
 				FECAFCB01CAA408F00656E63 /* Resources */,
+				C33B159A14B585BE27A4CB3D /* 📦 Embed Pods Frameworks */,
+				9F2226221FAAAE657F67270B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +308,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A095A36A4F764F2206A4A0E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurpleGiftCandy/Pods-PurpleGiftCandy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A3C3434B2A5F615C7BE0B9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92B52FF38D910116D668E4C4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurpleGiftCandy/Pods-PurpleGiftCandy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2226221FAAAE657F67270B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurpleGiftCandyTests/Pods-PurpleGiftCandyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33B159A14B585BE27A4CB3D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurpleGiftCandyTests/Pods-PurpleGiftCandyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47E06D53168161C30AFEC63 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FECAFC9A1CAA408C00656E63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FECAFCA41CAA408D00656E63 /* ViewController.swift in Sources */,
+				FEA602951CAB06B600904CCF /* GiftFeedTableViewCell.swift in Sources */,
+				FEA602A31CAB5D9000904CCF /* FriendsTableViewController.swift in Sources */,
+				FEA602A81CACE35A00904CCF /* NewGiftViewController.swift in Sources */,
 				FECAFCA21CAA408D00656E63 /* AppDelegate.swift in Sources */,
+				FEA602A11CAB5CC500904CCF /* FriendsTableViewCell.swift in Sources */,
+				FEA6028E1CAAF03F00904CCF /* OccasionsTableViewController.swift in Sources */,
+				FEA602921CAB012200904CCF /* Gift.swift in Sources */,
+				FEA6029D1CAB355800904CCF /* Utils.swift in Sources */,
+				FEA602AA1CACF37E00904CCF /* SelectListTableViewController.swift in Sources */,
+				FEA6029F1CAB385B00904CCF /* ProfileViewController.swift in Sources */,
+				FEA602991CAB2D6200904CCF /* User.swift in Sources */,
+				FEA6028C1CAAEDFD00904CCF /* OccasionTableViewCell.swift in Sources */,
+				FEA602A51CAB782F00904CCF /* OccasionViewController.swift in Sources */,
+				FEA602901CAAF06E00904CCF /* Occasion.swift in Sources */,
+				FEA602971CAB077C00904CCF /* FeedsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECAFCB71CAA408F00656E63 /* PurpleGiftCandyTests.swift in Sources */,
+				FEA602931CAB012200904CCF /* Gift.swift in Sources */,
+				FEA6029A1CAB2D6200904CCF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,23 +548,29 @@
 		};
 		FECAFCBC1CAA408F00656E63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F72AB30D6F2EBDB6F5737D /* Pods-PurpleGiftCandy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PurpleGiftCandy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = PurpleGiftCandy/Bridging.h;
 			};
 			name = Debug;
 		};
 		FECAFCBD1CAA408F00656E63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C343BD611A412784CF9961 /* Pods-PurpleGiftCandy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PurpleGiftCandy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = PurpleGiftCandy/Bridging.h;
 			};
 			name = Release;
 		};
@@ -386,6 +617,7 @@
 				FECAFCBD1CAA408F00656E63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FECAFCBE1CAA408F00656E63 /* Build configuration list for PBXNativeTarget "PurpleGiftCandyTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +626,7 @@
 				FECAFCC01CAA408F00656E63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
