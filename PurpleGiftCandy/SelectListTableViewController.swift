@@ -29,7 +29,7 @@ class SelectListTableViewController: UITableViewController {
     func loadSampleOccassions(){
         for _ in 0..<3 {
             let photo1 = UIImage(named: "wishlistIcon")!
-            let occasion1 = Occasion(title: "Wish List", dueDate: NSDate(), photo: photo1, giftsCount: 420)!
+            let occasion1 = Occasion(title: "Wish List", dueDate: NSDate(), photo: photo1, giftsCount: 420, uid: "")!
             occasions.append(occasion1)
         }
         

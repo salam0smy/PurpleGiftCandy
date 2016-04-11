@@ -7,45 +7,21 @@
 //
 
 import UIKit
+import Firebase
 
-class User {
-    // MARK: Properties
-    var name: String
-    var photo: UIImage?
-    var followersCount: Int
-    var followingCount: Int
-    var postsCount: Int
+struct User {
+    let uid: String
+    let email: String
     
-    // MARK: Initialization
-    init?(name: String, photo: UIImage?, followersCount: Int, followingCount: Int, postsCount: Int){
-        self.name = name
-        self.photo = photo
-        self.followersCount = followersCount
-        self.followingCount = followingCount
-        self.postsCount = postsCount
-        
-        if self.name.isEmpty {
-            return nil
-        }
+    // Initialize from Firebase
+    init(authData: FAuthData) {
+        uid = authData.uid
+        email = authData.providerData["email"] as! String
     }
     
-    convenience init?(name: String, photo: UIImage?){
-        self.init(name: name, photo: photo, followersCount: 0, followingCount: 0, postsCount: 0)
-        
-        if self.name.isEmpty {
-            return nil
-        }
-    }
-    
-    func getFollowingCountString() -> String {
-        return "\(self.followingCount) Following"
-    }
-    
-    func getFollowersCountString() -> String {
-        return "\(self.followersCount) Followers"
-    }
-    
-    func getPostsCountString() -> String {
-        return "\(self.postsCount) Posts"
+    // Initialize from arbitrary data
+    init(uid: String, email: String) {
+        self.uid = uid
+        self.email = email
     }
 }

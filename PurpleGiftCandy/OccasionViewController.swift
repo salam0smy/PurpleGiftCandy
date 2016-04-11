@@ -17,6 +17,7 @@ class OccasionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     
+    
     var occasion: Occasion?
     
     let privacyOptions = ["Public", "Private"]
@@ -81,21 +82,13 @@ class OccasionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             let date = datePicker.date
             let photo1 = UIImage(named: "wishlistIcon")!
             // Set the meal to be passed to MealTableViewController after the unwind segue.
-            occasion = Occasion(title: name, dueDate: date, photo: photo1, giftsCount: 0)
+            let uid = Stores.auth?.uid
+            occasion = Occasion(title: name, dueDate: date, photo: photo1, giftsCount: 0, uid: uid!)
         }
     }
     
     // MARK: Navigation
-//    @IBAction func cancel(sender: UIBarButtonItem) {
-//        // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
-//        let isPresentingInAddMealMode = presentingViewController is UINavigationController
-//        if isPresentingInAddMealMode {
-//            dismissViewControllerAnimated(true, completion: nil)
-//        }
-//        else{
-//            navigationController!.popViewControllerAnimated(true)
-//        }
-//    }
+
     @IBAction func cancel(sender: UIBarButtonItem) {
         print("cancel")
          dismissViewControllerAnimated(true, completion: nil)

@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E31D6073293639C976EBF6F /* Pods_PurpleGiftCandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E96ACA3FB8542710CC630E5 /* Pods_PurpleGiftCandy.framework */; };
+		048936B3AACBCAEBD5769EC0 /* Pods_PurpleGiftCandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7055F48DDB6BEE1271547AF /* Pods_PurpleGiftCandy.framework */; };
+		FE111FAD1CB5DED100BB8D74 /* OccasionGiftCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE111FAC1CB5DED100BB8D74 /* OccasionGiftCollectionViewController.swift */; };
+		FE111FAF1CB61BC700BB8D74 /* OccasionGiftCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE111FAE1CB61BC700BB8D74 /* OccasionGiftCollectionViewCell.swift */; };
+		FE1F29921CB03967008AD4CE /* Stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29911CB03967008AD4CE /* Stores.swift */; };
+		FE1F29931CB03967008AD4CE /* Stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29911CB03967008AD4CE /* Stores.swift */; };
+		FE1F29951CB03C05008AD4CE /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29941CB03C05008AD4CE /* BaseStore.swift */; };
+		FE1F29961CB03C05008AD4CE /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29941CB03C05008AD4CE /* BaseStore.swift */; };
+		FE1F29981CB043A9008AD4CE /* OccasionsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29971CB043A9008AD4CE /* OccasionsStore.swift */; };
+		FE1F29991CB043A9008AD4CE /* OccasionsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29971CB043A9008AD4CE /* OccasionsStore.swift */; };
+		FE1F299F1CB1F8B4008AD4CE /* GiftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F299E1CB1F8B4008AD4CE /* GiftStore.swift */; };
+		FE1F29A11CB2592A008AD4CE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29A01CB2592A008AD4CE /* Profile.swift */; };
+		FE1F29A21CB2592A008AD4CE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29A01CB2592A008AD4CE /* Profile.swift */; };
+		FE1F29A41CB28CA1008AD4CE /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */; };
+		FE1F29A51CB28CA1008AD4CE /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */; };
+		FE42C3261CBB4FB600A4AABA /* SearchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42C3251CBB4FB600A4AABA /* SearchStore.swift */; };
 		FEA6028C1CAAEDFD00904CCF /* OccasionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */; };
 		FEA6028E1CAAF03F00904CCF /* OccasionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */; };
 		FEA602901CAAF06E00904CCF /* Occasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028F1CAAF06E00904CCF /* Occasion.swift */; };
@@ -24,12 +38,18 @@
 		FEA602A51CAB782F00904CCF /* OccasionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A41CAB782F00904CCF /* OccasionViewController.swift */; };
 		FEA602A81CACE35A00904CCF /* NewGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A71CACE35A00904CCF /* NewGiftViewController.swift */; };
 		FEA602AA1CACF37E00904CCF /* SelectListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602A91CACF37E00904CCF /* SelectListTableViewController.swift */; };
+		FEA602AB1CAD04E200904CCF /* Occasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028F1CAAF06E00904CCF /* Occasion.swift */; };
+		FEA602AD1CAD07C400904CCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA602AC1CAD07C400904CCF /* LoginViewController.swift */; };
 		FECAFCA21CAA408D00656E63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCA11CAA408D00656E63 /* AppDelegate.swift */; };
 		FECAFCA41CAA408D00656E63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCA31CAA408D00656E63 /* ViewController.swift */; };
 		FECAFCA71CAA408D00656E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCA51CAA408D00656E63 /* Main.storyboard */; };
 		FECAFCA91CAA408D00656E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCA81CAA408D00656E63 /* Assets.xcassets */; };
 		FECAFCAC1CAA408D00656E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAFCAA1CAA408D00656E63 /* LaunchScreen.storyboard */; };
 		FECAFCB71CAA408F00656E63 /* PurpleGiftCandyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAFCB61CAA408F00656E63 /* PurpleGiftCandyTests.swift */; };
+		FEE154ED1CAE4BCD00ABA177 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE154EC1CAE4BCD00ABA177 /* AuthStore.swift */; };
+		FEE154EE1CAE4BCD00ABA177 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE154EC1CAE4BCD00ABA177 /* AuthStore.swift */; };
+		FEFD23FE1CB7724D0074505A /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD23FD1CB7724D0074505A /* ImageStore.swift */; };
+		FEFD24001CB977A10074505A /* MyGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD23FF1CB977A10074505A /* MyGiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +64,17 @@
 
 /* Begin PBXFileReference section */
 		00C343BD611A412784CF9961 /* Pods-PurpleGiftCandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleGiftCandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurpleGiftCandy/Pods-PurpleGiftCandy.release.xcconfig"; sourceTree = "<group>"; };
-		1E96ACA3FB8542710CC630E5 /* Pods_PurpleGiftCandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurpleGiftCandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F72AB30D6F2EBDB6F5737D /* Pods-PurpleGiftCandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurpleGiftCandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurpleGiftCandy/Pods-PurpleGiftCandy.debug.xcconfig"; sourceTree = "<group>"; };
+		F7055F48DDB6BEE1271547AF /* Pods_PurpleGiftCandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurpleGiftCandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE111FAC1CB5DED100BB8D74 /* OccasionGiftCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionGiftCollectionViewController.swift; sourceTree = "<group>"; };
+		FE111FAE1CB61BC700BB8D74 /* OccasionGiftCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionGiftCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE1F29911CB03967008AD4CE /* Stores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stores.swift; sourceTree = "<group>"; };
+		FE1F29941CB03C05008AD4CE /* BaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
+		FE1F29971CB043A9008AD4CE /* OccasionsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionsStore.swift; sourceTree = "<group>"; };
+		FE1F299E1CB1F8B4008AD4CE /* GiftStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftStore.swift; sourceTree = "<group>"; };
+		FE1F29A01CB2592A008AD4CE /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		FE42C3251CBB4FB600A4AABA /* SearchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStore.swift; sourceTree = "<group>"; };
 		FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionTableViewCell.swift; sourceTree = "<group>"; };
 		FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionsTableViewController.swift; sourceTree = "<group>"; };
 		FEA6028F1CAAF06E00904CCF /* Occasion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occasion.swift; sourceTree = "<group>"; };
@@ -61,6 +90,7 @@
 		FEA602A61CAC8DD600904CCF /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		FEA602A71CACE35A00904CCF /* NewGiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGiftViewController.swift; sourceTree = "<group>"; };
 		FEA602A91CACF37E00904CCF /* SelectListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectListTableViewController.swift; sourceTree = "<group>"; };
+		FEA602AC1CAD07C400904CCF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FECAFC9E1CAA408D00656E63 /* PurpleGiftCandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleGiftCandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECAFCA11CAA408D00656E63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FECAFCA31CAA408D00656E63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +101,9 @@
 		FECAFCB21CAA408F00656E63 /* PurpleGiftCandyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleGiftCandyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECAFCB61CAA408F00656E63 /* PurpleGiftCandyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleGiftCandyTests.swift; sourceTree = "<group>"; };
 		FECAFCB81CAA408F00656E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE154EC1CAE4BCD00ABA177 /* AuthStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
+		FEFD23FD1CB7724D0074505A /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		FEFD23FF1CB977A10074505A /* MyGiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E31D6073293639C976EBF6F /* Pods_PurpleGiftCandy.framework in Frameworks */,
+				048936B3AACBCAEBD5769EC0 /* Pods_PurpleGiftCandy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +128,7 @@
 		A76A62D62A2FDBB80EDA56DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E96ACA3FB8542710CC630E5 /* Pods_PurpleGiftCandy.framework */,
+				F7055F48DDB6BEE1271547AF /* Pods_PurpleGiftCandy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +148,7 @@
 				FEA6028F1CAAF06E00904CCF /* Occasion.swift */,
 				FEA602911CAB012200904CCF /* Gift.swift */,
 				FEA602981CAB2D6200904CCF /* User.swift */,
+				FE1F29A01CB2592A008AD4CE /* Profile.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -125,6 +159,7 @@
 				FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */,
 				FEA602941CAB06B600904CCF /* GiftFeedTableViewCell.swift */,
 				FEA602A01CAB5CC500904CCF /* FriendsTableViewCell.swift */,
+				FE111FAE1CB61BC700BB8D74 /* OccasionGiftCollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -139,6 +174,9 @@
 				FEA602A41CAB782F00904CCF /* OccasionViewController.swift */,
 				FEA602A71CACE35A00904CCF /* NewGiftViewController.swift */,
 				FEA602A91CACF37E00904CCF /* SelectListTableViewController.swift */,
+				FEA602AC1CAD07C400904CCF /* LoginViewController.swift */,
+				FE111FAC1CB5DED100BB8D74 /* OccasionGiftCollectionViewController.swift */,
+				FEFD23FF1CB977A10074505A /* MyGiftViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -146,15 +184,16 @@
 		FEA6028A1CAAEDC400904CCF /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				FEE154EC1CAE4BCD00ABA177 /* AuthStore.swift */,
+				FE1F29911CB03967008AD4CE /* Stores.swift */,
+				FE1F29941CB03C05008AD4CE /* BaseStore.swift */,
+				FE1F29971CB043A9008AD4CE /* OccasionsStore.swift */,
+				FE1F299E1CB1F8B4008AD4CE /* GiftStore.swift */,
+				FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */,
+				FEFD23FD1CB7724D0074505A /* ImageStore.swift */,
+				FE42C3251CBB4FB600A4AABA /* SearchStore.swift */,
 			);
 			name = Store;
-			sourceTree = "<group>";
-		};
-		FEA6029B1CAB353A00904CCF /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		FECAFC951CAA408C00656E63 = {
@@ -180,7 +219,6 @@
 		FECAFCA01CAA408D00656E63 /* PurpleGiftCandy */ = {
 			isa = PBXGroup;
 			children = (
-				FEA6029B1CAB353A00904CCF /* New Group */,
 				FEA6028A1CAAEDC400904CCF /* Store */,
 				FEA602891CAAEDBE00904CCF /* Controller */,
 				FEA602881CAAEDB200904CCF /* View */,
@@ -262,6 +300,7 @@
 				TargetAttributes = {
 					FECAFC9D1CAA408C00656E63 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 853J64HCU9;
 					};
 					FECAFCB11CAA408F00656E63 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -407,21 +446,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECAFCA41CAA408D00656E63 /* ViewController.swift in Sources */,
+				FE111FAD1CB5DED100BB8D74 /* OccasionGiftCollectionViewController.swift in Sources */,
 				FEA602951CAB06B600904CCF /* GiftFeedTableViewCell.swift in Sources */,
+				FE1F29951CB03C05008AD4CE /* BaseStore.swift in Sources */,
+				FEFD24001CB977A10074505A /* MyGiftViewController.swift in Sources */,
+				FE1F29A11CB2592A008AD4CE /* Profile.swift in Sources */,
 				FEA602A31CAB5D9000904CCF /* FriendsTableViewController.swift in Sources */,
 				FEA602A81CACE35A00904CCF /* NewGiftViewController.swift in Sources */,
+				FE111FAF1CB61BC700BB8D74 /* OccasionGiftCollectionViewCell.swift in Sources */,
 				FECAFCA21CAA408D00656E63 /* AppDelegate.swift in Sources */,
+				FE42C3261CBB4FB600A4AABA /* SearchStore.swift in Sources */,
 				FEA602A11CAB5CC500904CCF /* FriendsTableViewCell.swift in Sources */,
 				FEA6028E1CAAF03F00904CCF /* OccasionsTableViewController.swift in Sources */,
+				FEE154ED1CAE4BCD00ABA177 /* AuthStore.swift in Sources */,
 				FEA602921CAB012200904CCF /* Gift.swift in Sources */,
+				FE1F29A41CB28CA1008AD4CE /* ProfileStore.swift in Sources */,
+				FEFD23FE1CB7724D0074505A /* ImageStore.swift in Sources */,
 				FEA6029D1CAB355800904CCF /* Utils.swift in Sources */,
 				FEA602AA1CACF37E00904CCF /* SelectListTableViewController.swift in Sources */,
 				FEA6029F1CAB385B00904CCF /* ProfileViewController.swift in Sources */,
+				FE1F29921CB03967008AD4CE /* Stores.swift in Sources */,
 				FEA602991CAB2D6200904CCF /* User.swift in Sources */,
+				FE1F29981CB043A9008AD4CE /* OccasionsStore.swift in Sources */,
 				FEA6028C1CAAEDFD00904CCF /* OccasionTableViewCell.swift in Sources */,
+				FEA602AD1CAD07C400904CCF /* LoginViewController.swift in Sources */,
 				FEA602A51CAB782F00904CCF /* OccasionViewController.swift in Sources */,
 				FEA602901CAAF06E00904CCF /* Occasion.swift in Sources */,
 				FEA602971CAB077C00904CCF /* FeedsTableViewController.swift in Sources */,
+				FE1F299F1CB1F8B4008AD4CE /* GiftStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +481,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA602AB1CAD04E200904CCF /* Occasion.swift in Sources */,
+				FE1F29A51CB28CA1008AD4CE /* ProfileStore.swift in Sources */,
 				FECAFCB71CAA408F00656E63 /* PurpleGiftCandyTests.swift in Sources */,
+				FE1F29961CB03C05008AD4CE /* BaseStore.swift in Sources */,
+				FEE154EE1CAE4BCD00ABA177 /* AuthStore.swift in Sources */,
 				FEA602931CAB012200904CCF /* Gift.swift in Sources */,
 				FEA6029A1CAB2D6200904CCF /* User.swift in Sources */,
+				FE1F29991CB043A9008AD4CE /* OccasionsStore.swift in Sources */,
+				FE1F29A21CB2592A008AD4CE /* Profile.swift in Sources */,
+				FE1F29931CB03967008AD4CE /* Stores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,11 +611,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PurpleGiftCandy",
+				);
 				INFOPLIST_FILE = PurpleGiftCandy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = PurpleGiftCandy/Bridging.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -566,11 +631,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PurpleGiftCandy",
+				);
 				INFOPLIST_FILE = PurpleGiftCandy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OneTech3.PurpleGiftCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = PurpleGiftCandy/Bridging.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

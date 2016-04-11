@@ -25,9 +25,9 @@ class FeedsTableViewController: UITableViewController {
     
     func loadSampleFeed(){
         for _ in 0..<3 {
-            let photo1 = UIImage(named: "defaultPhoto")!
-            let occasion1 = Occasion(title: "Wish List", dueDate: NSDate(), photo: photo1, giftsCount: 420)!
-            let gift = Gift(title: "Watch", photo: photo1, occasion: occasion1, price: 420.420)
+            let photo1 = UIImage(named: "defaultPhoto")
+            let occasion1 = Occasion(title: "Wish List", dueDate: NSDate(), photo: photo1, giftsCount: 420, uid:"")!
+            let gift = Gift(title: "Watch", photo: photo1!, occasion: occasion1, price: 420.420, description: "", seller: "seller", _occasions: [:], occasions: [], user: "")
             gifts.append(gift)
         }
         

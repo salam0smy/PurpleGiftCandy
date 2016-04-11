@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
    // MARK: Properties
-    var user: User?
+    var profile: Profile?
     
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var postsLabel: UILabel!
@@ -27,16 +27,16 @@ class ProfileViewController: UIViewController {
     }
     
     func setViewVars(){
-        self.photoImageView.image = user?.photo?.circle
-        self.followersLabel.text = user?.getFollowersCountString()
-        self.followingLabel.text = user?.getFollowingCountString()
-        self.postsLabel.text = user?.getPostsCountString()
-        navigationItem.title = user?.name
+        self.photoImageView.image = profile?.photo?.circle
+        self.followersLabel.text = profile?.getFollowersCountString()
+        self.followingLabel.text = profile?.getFollowingCountString()
+        self.postsLabel.text = profile?.getPostsCountString()
+        navigationItem.title = profile?.name
     }
     
     func loadSampleUser(){
         let photo1 = UIImage(named: "default_profile")!
-        self.user = User(name: "Salam Alyahya", photo: photo1)!
+        self.profile = Profile(name: "Salam Alyahya", photo: photo1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +44,10 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logoutClick(sender: UIButton) {
+        
+        Stores.authStore.logout()
+    }
 
     /*
     // MARK: - Navigation

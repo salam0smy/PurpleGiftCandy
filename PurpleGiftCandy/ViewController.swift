@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class ViewController: UITabBarController, AuthStoreListener {
     var button :UIButton!
     var isHighLighted: Bool = false
 
@@ -17,6 +17,7 @@ class ViewController: UITabBarController {
         // Do any additional setup after loading the view, typically from a nib.
         let photo1 = UIImage(named: "icon_gift_btn")!
         addCenterButtonWithImage(photo1, highlightImage: photo1)
+        Stores.authStore.logoutListerner = self
 
     }
 
@@ -57,13 +58,15 @@ class ViewController: UITabBarController {
             
         }
         
-        button.addTarget(self, action: "changeTabToMiddleTab:", forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.changeTabToMiddleTab(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
         
     }
     
-    
+    func logoutFinishSuccessfully() {
+        performSegueWithIdentifier("loginSegue", sender: nil)
+    }
     
     func changeTabToMiddleTab(sender:UIButton)
         

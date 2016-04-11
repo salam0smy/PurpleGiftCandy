@@ -35,3 +35,11 @@ extension UIImage {
         return result
     }
 }
+
+extension NSDate {
+    func stringToDate(sDate: String) -> NSDate? {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:sssZZZ"
+        return dateFormatter.dateFromString(sDate)
+    }
+}
