@@ -17,7 +17,7 @@ struct Profile {
     var followersCount: Int
     var followingCount: Int
     var postsCount: Int
-    var key: String
+    var user: String
     var photoKey: String?
     
     // MARK: Initialization
@@ -28,7 +28,7 @@ struct Profile {
         self.postsCount = 0
         self.followingCount = 0
         self.username = ""
-        self.key = ""
+        self.user = ""
     }
     
     init(username: String) {
@@ -38,7 +38,7 @@ struct Profile {
         self.followingCount = 0
         self.name = ""
         self.photo = nil
-        self.key = ""
+        self.user = ""
     }
     
     init(snap: FDataSnapshot){
@@ -48,19 +48,19 @@ struct Profile {
         self.followingCount = snap.value["followingCount"] as! Int
         self.name = snap.value["name"] as! String
         self.photo = nil
-        self.key = snap.value["username"] as! String
-        //self.photoKey = snap.value[""]
+        self.photoKey = snap.value["photo"] as? String
+        self.user = snap.value["user"] as! String
     }
     
-    init(snap: [String: AnyObject]){
-        self.username = snap["username"] as! String
-        self.followersCount = snap["followersCount"] as! Int
-        self.postsCount = snap["postsCount"] as! Int
-        self.followingCount = snap["followingCount"] as! Int
-        self.name = snap["name"] as! String
+    init(snapDictionary: [String: AnyObject]){
+        self.username = snapDictionary["username"] as! String
+        self.followersCount = snapDictionary["followersCount"] as! Int
+        self.postsCount = snapDictionary["postsCount"] as! Int
+        self.followingCount = snapDictionary["followingCount"] as! Int
+        self.name = snapDictionary["name"] as! String
         self.photo = nil
-        self.key = snap["username"] as! String
-        //self.photoKey = snap.value[""]
+        self.photoKey = snapDictionary["photo"] as? String
+        self.user = snapDictionary["user"] as! String
     }
     
     init(name: String, username: String, photo: UIImage, followersCount: Int, followingCount: Int, postsCount: Int, key: String){
@@ -70,7 +70,7 @@ struct Profile {
         self.postsCount = postsCount
         self.followingCount = followingCount
         self.username = username
-        self.key = key
+        self.user = key
     }
     
     func getFollowingCountString() -> String {
@@ -88,12 +88,13 @@ struct Profile {
     func toAnyObject() -> Dictionary<String, AnyObject> {
         return [
             "username": username,
-            "user": key,
+            "user": user,
             "name": name,
             "followersCount": 0,
             "followingCount": 0,
             "postsCount": 0,
-            "createdAt": NSData().description
+            "createdAt": utils.toFormattedString(NSDate()),
+            "photo": photoKey! ?? ""
         ]
     }
 }

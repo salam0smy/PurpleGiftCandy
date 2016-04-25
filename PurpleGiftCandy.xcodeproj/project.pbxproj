@@ -22,6 +22,7 @@
 		FE1F29A41CB28CA1008AD4CE /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */; };
 		FE1F29A51CB28CA1008AD4CE /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */; };
 		FE42C3261CBB4FB600A4AABA /* SearchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42C3251CBB4FB600A4AABA /* SearchStore.swift */; };
+		FE42C3281CBC76FB00A4AABA /* SignupDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42C3271CBC76FB00A4AABA /* SignupDetailsViewController.swift */; };
 		FEA6028C1CAAEDFD00904CCF /* OccasionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */; };
 		FEA6028E1CAAF03F00904CCF /* OccasionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */; };
 		FEA602901CAAF06E00904CCF /* Occasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA6028F1CAAF06E00904CCF /* Occasion.swift */; };
@@ -75,6 +76,7 @@
 		FE1F29A01CB2592A008AD4CE /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FE1F29A31CB28CA1008AD4CE /* ProfileStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
 		FE42C3251CBB4FB600A4AABA /* SearchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStore.swift; sourceTree = "<group>"; };
+		FE42C3271CBC76FB00A4AABA /* SignupDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupDetailsViewController.swift; sourceTree = "<group>"; };
 		FEA6028B1CAAEDFD00904CCF /* OccasionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionTableViewCell.swift; sourceTree = "<group>"; };
 		FEA6028D1CAAF03F00904CCF /* OccasionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccasionsTableViewController.swift; sourceTree = "<group>"; };
 		FEA6028F1CAAF06E00904CCF /* Occasion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occasion.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				FEA602AC1CAD07C400904CCF /* LoginViewController.swift */,
 				FE111FAC1CB5DED100BB8D74 /* OccasionGiftCollectionViewController.swift */,
 				FEFD23FF1CB977A10074505A /* MyGiftViewController.swift */,
+				FE42C3271CBC76FB00A4AABA /* SignupDetailsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				FEA602901CAAF06E00904CCF /* Occasion.swift in Sources */,
 				FEA602971CAB077C00904CCF /* FeedsTableViewController.swift in Sources */,
 				FE1F299F1CB1F8B4008AD4CE /* GiftStore.swift in Sources */,
+				FE42C3281CBC76FB00A4AABA /* SignupDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

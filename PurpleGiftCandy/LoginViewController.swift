@@ -21,6 +21,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AuthStoreListe
     @IBOutlet weak var buttonsContainer: UIView!
     var signupButton: (button: SwiftyCustomContentButton, indicator: UIActivityIndicatorView)!
     var loginButton: (button: SwiftyCustomContentButton, indicator: UIActivityIndicatorView)!
+    var profile: Profile?
+    var user:User?
+    let imageStore = Stores.imageStore
     
 
     override func viewDidLoad() {
@@ -96,6 +99,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AuthStoreListe
     }
     
     @IBAction func signup(sender: UIButton) {
+        
         self.signupButton.indicator.startAnimating()
         let email = emailTextField.text!
         let password = passwordTextField.text!
@@ -111,23 +115,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AuthStoreListe
                 
             }
         }
-        let finishLogin = {(_error: NSError?) -> () in
-            // TODO: handle signup error
-            self.signupButton.indicator.stopAnimating()
-            if let err = _error{
-                // handle error
-                print(err)
-            }
-            else{
-                
-            }
-        }
+        
         let sucess = {(user: User) -> () in
             // create a profile then login
-            let photo1 = UIImage(named: "defaultPhoto")
-            let profile = Profile(name: "", username: username, photo: photo1!, followersCount: 0, followingCount: 0, postsCount: 0, key: user.uid)
-            self.profileStore.createProfile(username, profile: profile, block: error)
-            self.authStore.login(email, password: password, finish: finishLogin)
+            self.user = user
+            //self.performSegueWithIdentifier("signupDetailsSegue", sender: nil)
+            self.performSegueWithIdentifier("signupDetailsSegue", sender: nil)
         }
         let exists = { (exist:Bool) -> () in
             if !exist {
@@ -153,14 +146,71 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AuthStoreListe
         startMainApplication()
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        
+        
     }
-    */
+    
+    @IBAction func unwindToSignup(sender: UIStoryboardSegue) {
+        
+        if let controller = sender.sourceViewController as? SignupDetailsViewController {
+            // get profile, set missing info, and upload image
+            let image = controller.selectedImage!
+            let username = usernameTextField.text!
 
+            self.profile = controller.profile
+            self.profile?.username = username
+            self.profile?.user = (self.user?.uid)!
+            
+            self.imageStore.writeImage(image.photo, ext: image.ext, user: (self.user?.uid)!, withBlock: { key in
+                // set image key then finish signup
+                self.profile?.photoKey = key
+                self.finishCreateProfile(self.profile!)
+
+            })
+            
+        }
+    }
+    
+    // save profile and login
+    func finishCreateProfile(profile: Profile){
+        let password = passwordTextField.text!
+        let username = usernameTextField.text!
+        let email = emailTextField.text!
+        let error = {(_error: NSError?) -> () in
+            // TODO: handle signup error
+            if let err = _error{
+                // handle error
+                print(err)
+                self.signupButton.indicator.stopAnimating()
+            }
+            else{
+                
+            }
+        }
+        let finishLogin = {(_error: NSError?) -> () in
+            // TODO: handle signup error
+            self.signupButton.indicator.stopAnimating()
+            if let err = _error{
+                // handle error
+                print(err)
+            }
+            else{
+                
+            }
+        }
+        
+        
+        self.profileStore.createProfile(username, profile: profile, block: error)
+        self.authStore.login(email, password: password, finish: finishLogin)
+        
+    
+    }
 }

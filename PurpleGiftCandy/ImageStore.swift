@@ -32,8 +32,9 @@ class ImageStore: BaseStore {
         let photos = ["large": lgPhoto, "medium": mdPhoto, "small": smPhoto]
         let ref = self.itemRef?.childByAutoId()
         let imgRef = ref?.childByAppendingPath("thumnails")
-        let info = ["user": user, "created": NSDate.description()]
+        let info = ["user": user, "created": utils.toFormattedString(NSDate())]
         
+        withBlock(ref?.key)
         ref!.setValue(info)
         
         photos.forEach { (key, photo) in
@@ -45,9 +46,6 @@ class ImageStore: BaseStore {
                     }
                 })
         }
-        
-        withBlock(ref?.key)
-        
     }
     
     func getImage(key: String, size: ThumnailSize, withBlock: (UIImage?)->Void){

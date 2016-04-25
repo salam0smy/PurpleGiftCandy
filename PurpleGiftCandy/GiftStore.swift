@@ -15,6 +15,7 @@ class GiftStore: BaseStore {
     override init(){
         super.init()
         self.itemRef = super.ref!.childByAppendingPath("gifts")
+        
     }
     
     func save(gift: Gift){

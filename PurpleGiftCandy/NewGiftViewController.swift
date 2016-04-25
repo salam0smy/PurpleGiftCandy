@@ -136,9 +136,6 @@ class NewGiftViewController: UIViewController, UIImagePickerControllerDelegate, 
                 gift?.photoKey = key
                 self.giftStore.save(gift!)
             })
-            
-            
-            
         }
     }
 

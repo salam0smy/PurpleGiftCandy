@@ -12,11 +12,13 @@ import Firebase
 
 class ProfileStore: BaseStore {
     var itemRef: Firebase?
-    let searchStore:SearchStore = Stores.searchStore
+    let searchStore: SearchStore = Stores.searchStore
     
     override init(){
         super.init()
-        self.itemRef = super.ref!.childByAppendingPath("profiles") as Firebase
+        self.itemRef = super.ref!.childByAppendingPath("profiles")
+        
+        
     }
     
     func createProfile(username: String, profile: Profile, block: ((NSError?)->(Void))){
@@ -42,6 +44,17 @@ class ProfileStore: BaseStore {
         })
     }
     
+    func getProfile(withUserId: String, finishProfileBlock: (Profile)->()) {
+        self.itemRef!.queryOrderedByChild("user").queryEqualToValue(withUserId).queryLimitedToFirst(1).observeEventType(.Value, withBlock: { snapshot in
+            for snap in snapshot.children{
+                if let item = snap as? FDataSnapshot {
+                    let profile = Profile(snap: item)
+                    finishProfileBlock(profile)
+                }
+            }
+        })
+    }
+    
     
     func searchForProfile(query: String, withBlock: ([Profile])->()){
         if !query.isEmpty {
@@ -56,7 +69,7 @@ class ProfileStore: BaseStore {
                         let hits = snap.value["hits"] as! [AnyObject]
                         var profiles = [Profile]()
                         for hit in hits {
-                            profiles.append(Profile(snap: hit["_source"] as! [String: AnyObject]))
+                            profiles.append(Profile(snapDictionary: hit["_source"] as! [String: AnyObject]))
                         }
                         print(profiles)
                         withBlock(profiles)
@@ -69,7 +82,6 @@ class ProfileStore: BaseStore {
             })
         }
         
-    
     }
     
     

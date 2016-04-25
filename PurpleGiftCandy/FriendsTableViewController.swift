@@ -10,11 +10,23 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
     
-    var profiles = [Profile]()
+    var friendsProfiles = [Profile]()
+    
     var searchProfiles: [Profile]?
     var isSearch = false
     let profileStore = Stores.profileStore
     let searchController = UISearchController(searchResultsController: nil)
+    let imageStore = Stores.imageStore
+    var profiles: [Profile] {
+        get {
+            if self.isSearch {
+                return self.searchProfiles!
+            }
+            else {
+                return self.friendsProfiles
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +50,7 @@ class FriendsTableViewController: UITableViewController, UISearchResultsUpdating
         for _ in 0..<4 {
             let photo1 = UIImage(named: "default_profile")!
             let profile = Profile(name: "Salam Yahya", photo: photo1)
-            profiles.append(profile)
+            friendsProfiles.append(profile)
         }
     }
 
@@ -54,16 +66,22 @@ class FriendsTableViewController: UITableViewController, UISearchResultsUpdating
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.isSearch ? self.searchProfiles!.count : self.profiles.count
+        return self.profiles.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let reuseIdentifier = "FriendsTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! FriendsTableViewCell
-        let user = self.isSearch ? searchProfiles![indexPath.row] : profiles[indexPath.row]
+        let user = self.profiles[indexPath.row]
         cell.nameLabel.text = user.name.isEmpty ? user.username : user.name
         cell.photoImageView.image = user.photo?.circle
+        
+        if let photoKey = user.photoKey {
+            imageStore.getImage(photoKey, size: .small, withBlock: {(photo) in
+                cell.photoImageView.image = photo?.circle
+            })
+        }
         // Configure the cell...
 
         return cell
@@ -86,10 +104,7 @@ class FriendsTableViewController: UITableViewController, UISearchResultsUpdating
             self.searchProfiles = []
             self.tableView.reloadData()
         }
-        
-        
-        
-    
+
     }
     
 //    func searchController(controller: UISearchController, shouldReloadTableForSearchString searchString: String?) -> Bool {
@@ -140,15 +155,22 @@ class FriendsTableViewController: UITableViewController, UISearchResultsUpdating
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let controller  = segue.destinationViewController as? ProfileViewController, cell = sender as? FriendsTableViewCell {
+            //let pathIndex = cell.index
+            let indexPath = tableView.indexPathForCell(cell)!
+            let selectedProfile = self.profiles[indexPath.row]
+            controller.profile = selectedProfile
+        }
+        
     }
-    */
+ 
     
     // MARK: - Search
     
